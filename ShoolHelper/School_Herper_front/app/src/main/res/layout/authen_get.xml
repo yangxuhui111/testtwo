@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * 功能：认证页面的前台实现xml部分
+ * 开发人：赵璐
+ * 开发时间：2018.12.5
+ *
+ * 描述：上传学生证
+ */
+-->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/top_yellow"
+        android:padding="1dp">
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/goback"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="13dp"/>
+
+        <TextView
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="校园认证"
+            android:textSize="26dp"
+            android:textColor="#FFFFFF"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/img5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/getphoto"
+            android:layout_marginTop="120dp"
+            android:layout_marginLeft="42dp"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/getphoto"
+            android:layout_marginTop="120dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="42dp"
+            android:layout_marginLeft="42dp"
+            android:layout_toRightOf="@+id/img5"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="340dp"
+        android:layout_marginLeft="42dp"
+        android:gravity="center"
+        android:background="@drawable/base_blue">
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="上传"
+            android:textStyle="bold"
+            android:textSize="24dp"
+            android:textColor="#FFFFFF"/>
+    </RelativeLayout>
+
+</FrameLayout>

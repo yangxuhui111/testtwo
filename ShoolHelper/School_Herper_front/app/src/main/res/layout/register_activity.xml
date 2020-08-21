@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * 功能：注册页面的前台实现xml部分
+ * 开发人：赵璐
+ * 开发时间：2018.11.27
+ *
+ * 描述：注册页面
+ */
+-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding = "10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding = "2dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="注册"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:textColor="#101010"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:src="@drawable/re_people" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:padding = "10dp"
+        android:background="@drawable/shape_corner"
+        >
+        <EditText
+            android:id="@+id/tv_phone"
+            android:hint="手机号"
+            android:text=""
+            android:textSize="14dp"
+            android:paddingLeft="15dp"
+            android:textColor="#AAAAAA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="12dp"
+        android:padding = "10dp"
+        android:background="@drawable/shape_corner"
+        >
+
+        <EditText
+            android:id="@+id/tv_password"
+            android:hint="密码"
+            android:text=""
+            android:textSize="14dp"
+            android:paddingLeft="15dp"
+            android:textColor="#AAAAAA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="12dp"
+        android:padding = "10dp"
+        android:background="@drawable/shape_corner">
+
+        <EditText
+            android:id="@+id/tv_name"
+            android:hint="昵称"
+            android:text=""
+            android:textSize="14dp"
+            android:paddingLeft="15dp"
+            android:textColor="#AAAAAA"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="12dp"
+        android:padding = "10dp"
+        android:background="@drawable/shape_corner">
+
+        <Spinner
+            android:id="@+id/sp_school"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:entries="@array/schoolNames"
+            android:background="#F0F0F0"
+            android:textColor="#AAAAAA"></Spinner>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="12dp"
+        android:padding = "10dp"
+        android:background="@drawable/shape_corner">
+        <EditText
+            android:id="@+id/tv_stuNumber"
+            android:hint="学号"
+            android:text=""
+            android:textSize="14dp"
+            android:paddingLeft="15dp"
+            android:textColor="#AAAAAA"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="40dp"
+        android:padding = "10dp"
+        android:background="@drawable/shape_corner2"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tv_register"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="注册"
+            android:textSize="18dp"
+            android:textColor="#FFFFFF"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="12dp">
+        <TextView
+            android:id="@+id/tv_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="已经有账号了？点击登录"
+            android:textSize="12dp"
+            android:textColor="#B9B9B9"/>
+    </LinearLayout>
+
+
+</LinearLayout>

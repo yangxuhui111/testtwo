@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    开发人：尚一飞
+    时间：12.17
+    简介：Task子页的显示页
+-->
+<com.scwang.smartrefresh.layout.SmartRefreshLayout
+    android:id="@+id/SmartR"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/top_yellow"
+        android:padding="1dp">
+
+        <ImageView
+            android:id="@+id/img_back_first"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/goback"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="13dp"/>
+
+        <TextView
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="我的发布"
+            android:textSize="26dp"
+            android:textColor="#FFFFFF"/>
+    </FrameLayout>
+
+    <ListView
+        android:id="@+id/lv_task_first"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</FrameLayout>
+</com.scwang.smartrefresh.layout.SmartRefreshLayout>

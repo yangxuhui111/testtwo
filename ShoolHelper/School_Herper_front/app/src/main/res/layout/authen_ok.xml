@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * 功能：认证页面的前台实现xml部分
+ * 开发人：赵璐
+ * 开发时间：2018.12.5
+ *
+ * 描述：已认证
+ */
+-->
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/top_yellow"
+        android:padding="1dp">
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/goback"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="13dp"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="校园认证"
+            android:textSize="26dp"
+            android:textColor="#FFFFFF"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="350dp"
+        android:layout_height="180dp"
+        android:orientation="horizontal"
+        android:background="@drawable/shape_corner4"
+        android:layout_marginTop="85dp"
+        android:layout_marginLeft="17dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/text_student"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="学生认证"
+                android:textSize="24dp"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="23dp"
+                android:layout_marginLeft="23dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="河北师范大学"
+                android:textColor="#FFFFFF"
+                android:textSize="17dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="30dp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="75dp"
+            android:layout_height="35dp"
+            android:background="@drawable/back_color2"
+            android:layout_marginTop="125dp"
+            android:layout_marginLeft="240dp"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="已认证"
+                android:textSize="18dp"
+                android:textColor="#FFFFFF"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</FrameLayout>

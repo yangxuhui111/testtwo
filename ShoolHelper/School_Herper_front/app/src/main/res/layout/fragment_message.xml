@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+/**
+ * @CONTENT: publish content
+ * @DEVELOPER: Zhangxixian
+ * @DATE: 18/12/16
+ */
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomePage.fragment.MessageFragment"
+    android:id="@+id/frame_message">
+    <!--<com.scwang.smartrefresh.layout.SmartRefreshLayout-->
+        <!--android:id="@+id/SmartRlMessage"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/top_yellow"
+        android:padding="1dp">
+
+        <TextView
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="私信"
+            android:textSize="26dp"
+            android:textColor="#FFFFFF"/>
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/sys_messsage"
+        android:layout_width="600dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/box_color1">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_gravity="center">
+            <ImageView
+                android:layout_marginTop="20dp"
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:src="@drawable/bigmessage"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="22dp"
+                android:text="我的通知"
+                android:textSize="18dp"
+                android:textColor="#000000"
+                android:layout_marginTop="5dp"/>
+            <TextView
+                android:layout_marginTop="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:text="官方通知"
+                android:textSize="14dp"
+                android:textColor="#888888"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+            <ImageView
+                android:id="@+id/btn_enter"
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:src="@drawable/home_publish_arrows_right"
+                android:clickable="true"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sys_messsage"/>
+    <!--</com.scwang.smartrefresh.layout.SmartRefreshLayout>-->
+
+
+</RelativeLayout>

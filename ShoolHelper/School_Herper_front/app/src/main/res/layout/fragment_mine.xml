@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * 功能：我的主页的前台实现xml部分
+ * 开发人：赵璐 刘亚峰
+ * 开发时间：2018.11.27
+ *
+ * 描述：我的主页
+ */
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomePage.fragment.MineFragment"
+    android:id="@+id/frame_mine">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:id="@+id/RL_01"
+        android:layout_width="wrap_content"
+        android:layout_height="224dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="155dp"
+            android:background="@drawable/myback">
+
+            <TextView
+                android:id="@+id/tv_set"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="300dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="设置"
+                android:textColor="#313332"
+                android:textSize="22dp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="70dp"
+            android:src="@drawable/myhead" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@+id/RL_01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/RL_02"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#0F0F0F"
+
+                android:textSize="24dp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/RL_03"
+            android:layout_below="@+id/RL_02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/TV_05"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="个性签名"
+                android:layout_marginLeft="50dp"
+                android:textColor="#0F0F0F"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_toRightOf="@+id/TV_05"
+                android:id="@+id/tv_write"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#7D7777"
+                android:textSize="16dp" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/RL_04"
+            android:layout_below="@+id/RL_03"
+            android:layout_width="wrap_content"
+            android:layout_height="16dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/TV_06"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="手机"
+                android:textColor="#BBBBBB" />
+
+            <TextView
+                android:layout_toRightOf="@+id/TV_06"
+                android:id="@+id/tv_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="#101010" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/RL_05"
+            android:layout_below="@+id/RL_04"
+            android:layout_alignLeft="@+id/RL_04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/TV_07"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="姓名"
+                android:textColor="#BBBBBB" />
+
+            <TextView
+                android:layout_toRightOf="@+id/TV_07"
+                android:id="@+id/tv_realname"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#101010" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/RL_06"
+            android:layout_below="@+id/RL_05"
+            android:layout_alignLeft="@+id/RL_05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:id="@+id/TV_08"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="性别"
+                android:textColor="#BBBBBB" />
+
+            <TextView
+                android:layout_toRightOf="@+id/TV_08"
+                android:id="@+id/tv_sex"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textColor="#101010" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/RL_07"
+            android:layout_below="@+id/RL_06"
+            android:layout_alignLeft="@+id/RL_06"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:id="@+id/TV_09"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="学校"
+                android:textColor="#BBBBBB" />
+
+            <TextView
+                android:id="@+id/TV_10"
+                android:layout_toRightOf="@+id/TV_09"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="河北师范大学"
+                android:textColor="#101010" />
+
+            <ImageView
+                android:layout_toRightOf="@+id/TV_10"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/authenok" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/RL_08"
+            android:layout_below="@+id/RL_07"
+            android:layout_alignLeft="@+id/RL_07"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:id="@+id/TV_11"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="信誉度"
+                android:textColor="#BBBBBB" />
+
+            <ImageView
+                android:id="@+id/Img_05"
+                android:layout_toRightOf="@+id/TV_11"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/zuanshi" />
+
+            <ImageView
+                android:layout_toRightOf="@+id/Img_05"
+                android:id="@+id/Img_06"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="8dp"
+                android:src="@drawable/zuanshi" />
+
+            <ImageView
+                android:layout_toRightOf="@+id/Img_06"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="24dp"
+                android:src="@drawable/zuanshi" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_below="@+id/RL_08"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img_money"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="250dp"
+                android:src="@drawable/moneybag" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

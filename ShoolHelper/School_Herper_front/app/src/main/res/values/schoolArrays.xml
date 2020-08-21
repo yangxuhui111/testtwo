@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="schoolNames">
+        <item>请选择学校</item>
+        <item>河北师范大学</item>
+    </string-array>
+</resources>

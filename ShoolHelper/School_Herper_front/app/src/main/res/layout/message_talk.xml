@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * 功能：消息页面的前台实现xml部分
+ * 开发人：张茜贤
+ * 开发时间：2019/6/4
+ *
+ * 描述：
+ */
+-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/top_yellow"
+        android:padding="1dp">
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/goback"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="13dp"/>
+
+        <TextView
+            android:id="@+id/tv_other"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="小黑"
+            android:textSize="26dp"
+            android:textColor="#FFFFFF"/>
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_show"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_margin="10dp">
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_show"-->
+            <!--android:layout_width="200dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text=""-->
+            <!--android:textSize="20dp"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:padding="3dp"-->
+            <!--android:background="@drawable/box_color1"/>-->
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/go_authenget"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/back_grey"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="30dp"
+            android:src="@drawable/makefeng"
+            android:layout_marginLeft="6dp"/>
+
+        <EditText
+            android:id="@+id/et_input"
+            android:layout_width="280dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/backgd_talk"/>
+
+        <Button
+            android:id="@+id/btn_send"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="发送"
+            android:textSize="17dp"
+            android:textColor="#0076FF" />
+    </LinearLayout>
+</LinearLayout>

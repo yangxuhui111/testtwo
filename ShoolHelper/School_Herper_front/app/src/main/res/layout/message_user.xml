@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * 功能：消息页面的前台实现xml部分
+ * 开发人：赵璐
+ * 开发时间：2018.12.24
+ *
+ * 描述：
+ */
+-->
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/top_yellow"
+        android:padding="1dp">
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/goback"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="13dp"/>
+
+        <TextView
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="官方通知"
+            android:textSize="26dp"
+            android:textColor="#FFFFFF"/>
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/ln_a"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/box_color1">
+
+        <RelativeLayout
+            android:id="@+id/t1"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="38dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/logos"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/t12"
+            android:layout_toRightOf="@+id/t1"
+            android:layout_marginLeft="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="22dp"
+                android:text="官方通知"
+                android:id="@+id/gftz"
+                android:textSize="18dp"
+                android:textColor="#000000"
+                android:layout_marginTop="5dp"/>
+            <TextView
+                android:layout_marginTop="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_below="@+id/gftz"
+                android:text="你的代取快递任务发布成功"
+                android:textSize="14dp"
+                android:textColor="#888888"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_toRightOf="@+id/t12"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="12:21"
+                android:textSize="12dp"
+                android:layout_alignParentRight="true"
+                android:textColor="#888888"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="20dp"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ln_b"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/box_color1">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:id="@+id/t2"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="38dp"
+                android:layout_marginTop="1dp"
+                android:src="@drawable/logos"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/t22"
+            android:layout_toRightOf="@+id/t2"
+            android:layout_marginLeft="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="22dp"
+                android:text="官方通知"
+                android:id="@+id/gftz1"
+                android:textSize="18dp"
+                android:textColor="#000000"
+                android:layout_marginTop="5dp"/>
+            <TextView
+                android:layout_marginTop="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_below="@+id/gftz1"
+                android:text="你的代取快递任务取消成功"
+                android:textSize="14dp"
+                android:textColor="#888888"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_toRightOf="@+id/t22"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="12:21"
+                android:textSize="12dp"
+                android:layout_alignParentRight="true"
+                android:textColor="#888888"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="20dp"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ln_c"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="180dp"
+        android:background="@drawable/box_color1">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:id="@+id/t3"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="41dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/logos"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/t32"
+            android:layout_toRightOf="@+id/t3"
+            android:layout_marginLeft="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="22dp"
+                android:text="官方通知"
+                android:id="@+id/gftz2"
+                android:textSize="18dp"
+                android:textColor="#000000"
+                android:layout_marginTop="5dp"/>
+            <TextView
+                android:layout_marginTop="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_below="@+id/gftz2"
+                android:text="你的代取快递任务已被接收"
+                android:textSize="14dp"
+                android:textColor="#888888"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_toRightOf="@+id/t32"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="12:21"
+                android:textSize="12dp"
+                android:layout_alignParentRight="true"
+                android:textColor="#888888"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="20dp"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+</FrameLayout>

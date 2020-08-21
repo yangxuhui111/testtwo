@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * 功能：我的钱包的前台实现xml部分
+ * 开发人：张海波
+ * 开发时间：2018.12.7
+ *
+ * 描述：
+ */
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/wallet_L_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FF0000"
+        android:orientation="horizontal"
+        android:padding="1dp">
+
+        <ImageView
+            android:id="@+id/wallet_image_goback"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="7dp"
+            android:src="@drawable/goback" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="我的钱包"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/wallet_L_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FF0000"
+        android:orientation="vertical"
+        android:padding="1dp">
+
+        <TextView
+            android:id="@+id/wallet_text1"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:gravity="center"
+            android:text=""
+            android:textColor="#FFFFFF"
+            android:textSize="40sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="我的余额"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:layout_below="@+id/wallet_text1"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/wallet_L_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="1dp">
+
+
+        <RelativeLayout
+            android:id="@+id/ln_deposit"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="2dp"
+            android:background="#FFCCCC"
+            android:layout_weight="1">
+            <ImageView
+                android:id="@+id/ima_chongzhi"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/wallet1"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="40dp"
+                android:layout_centerVertical="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="充值"
+                android:textColor="#000000"
+                android:textSize="22sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/ima_chongzhi"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/ln_draw"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="2dp"
+            android:background="#FFCCCC"
+            android:layout_weight="1">
+            <ImageView
+                android:id="@+id/img_tixian"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/wallet"
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="33dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="提现"
+                android:textColor="#000000"
+                android:textSize="22sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/img_tixian"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="#FFFFFF"
+        android:orientation="horizontal"
+        android:padding="1dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="12dp"
+            android:gravity="center_vertical"
+            android:text="账单明细"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/home_publish_arrows_right" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:orientation="horizontal"
+        android:padding="1dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="12dp"
+            android:gravity="center_vertical"
+            android:text="我的银行卡"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="未添加"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:layout_marginRight="12dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/img_yinhangka"/>
+
+        <ImageView
+            android:id="@+id/img_yinhangka"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/home_publish_arrows_right" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:orientation="horizontal"
+        android:padding="1dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="12dp"
+            android:gravity="center_vertical"
+            android:text="我的支付宝"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="未添加"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:layout_marginRight="12dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/img_zhifubao"/>
+
+        <ImageView
+            android:id="@+id/img_zhifubao"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/home_publish_arrows_right" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:orientation="horizontal"
+        android:padding="1dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="12dp"
+            android:gravity="center_vertical"
+            android:text="支付设置"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/home_publish_arrows_right" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="常见问题"
+            android:textColor="#0000FF"
+            android:textSize="15sp"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+</LinearLayout>

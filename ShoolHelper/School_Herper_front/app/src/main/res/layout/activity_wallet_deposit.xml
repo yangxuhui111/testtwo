@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+/*
+ * 功能：我的钱包的前台实现xml部分
+ * 开发人：张海波
+ * 开发时间：2018.12.7
+ *
+ * 描述：
+ */
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="1dp">
+
+        <ImageView
+            android:id="@+id/back_wallet"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="7dp"
+            android:src="@drawable/goback3" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="余额充值"
+            android:textColor="#000000"
+            android:textSize="26sp" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:showDividers="middle">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="25dp"
+            android:background="#FFFFFF"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginTop="17dp"
+                    android:text="充值方式"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:layout_centerVertical="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="17dp"
+                    android:layout_marginRight="13dp"
+                    android:text="中国建设银行银行卡"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/img_kapian"/>
+
+                <ImageView
+                    android:id="@+id/img_kapian"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/home_publish_arrows_right" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="13dp"
+                android:layout_marginRight="13dp"
+                android:background="#000000"
+                android:gravity="center"></RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginTop="7dp"
+                    android:text="充值金额"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:layout_centerVertical="true"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/img_jinqian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="11dp"
+                    android:gravity="right"
+                    android:text="￥"
+                    android:textSize="50sp"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="15dp"
+                    android:layout_centerVertical="true"/>
+                <EditText
+                    android:inputType="number|numberDecimal"
+                    android:id="@+id/edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="13dp"
+                    android:hint="请输入金额"
+                    android:textSize="30sp"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/img_jinqian"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp">
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="15dp"
+                android:text="该卡本次最多可充值￥10000"
+                android:layout_centerVertical="true"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn"
+            android:layout_width="360dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:background="	#FF6347"
+            android:text="确认充值"
+            android:textColor="@color/white"
+            android:textSize="25sp"/>
+    </LinearLayout>
+</LinearLayout>
